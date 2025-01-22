@@ -3,6 +3,7 @@ import { createXRStore, XR, XROrigin, PointerEvents } from "@react-three/xr";
 import { useState } from "react";
 import { Vector3 } from "three";
 import { Handle } from "@react-three/handle";
+import { Footer } from "./components/Footer";
 import "./App.css";
 
 const store = createXRStore();
@@ -11,13 +12,12 @@ export default function App() {
   const [position] = useState(new Vector3());
 
   return (
-    <div className="app-container">
+    <div className="app-container vr-page">
       <div className="controls">
         <button onClick={() => store.enterVR()}>Enter VR</button>
         <button onClick={() => store.enterAR()}>Enter AR</button>
       </div>
       <Canvas className="canvas-container">
-
         <XR store={store}>
           <ambientLight />
           <XROrigin position={position} />
@@ -30,7 +30,9 @@ export default function App() {
           </Handle>
         </XR>
       </Canvas>
+      <Footer />
     </div>
   );
 }
+
 

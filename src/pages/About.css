@@ -1,0 +1,92 @@
+.about-page {
+	min-height: 100vh;
+	width: 100%;
+	overflow-y: auto;
+	padding-bottom: 60px; /* Height of footer */
+	box-sizing: border-box;
+}
+
+.about-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	box-sizing: border-box;
+}
+
+.about-header {
+	margin-bottom: 3rem;
+}
+
+.about-header h1 {
+	margin-top: 1rem;
+	color: #646cff;
+}
+
+.back-link {
+	display: inline-block;
+	color: #646cff;
+	text-decoration: none;
+	padding: 0.5rem 0;
+}
+
+.back-link:hover {
+	text-decoration: underline;
+}
+
+.about-section {
+	margin-bottom: 3rem;
+}
+
+.about-section h2 {
+	color: #646cff;
+	margin-bottom: 1.2rem;
+	font-size: 1.5rem;
+}
+
+.about-section p {
+	line-height: 1.6;
+	margin-bottom: 1rem;
+}
+
+.about-section ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.about-section ul li {
+	margin-bottom: 0.8rem;
+	padding-left: 1.5rem;
+	position: relative;
+	line-height: 1.4;
+}
+
+.about-section ul li:before {
+	content: "✓";
+	position: absolute;
+	left: 0;
+	color: #646cff;
+}
+
+.about-section a {
+	color: #646cff;
+	text-decoration: none;
+	padding: 0.2rem 0;
+}
+
+.about-section a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+	.about-container {
+		margin: 1rem auto;
+	}
+	
+	.about-header {
+		margin-bottom: 2rem;
+	}
+	
+	.about-section {
+		margin-bottom: 2rem;
+	}
+}
