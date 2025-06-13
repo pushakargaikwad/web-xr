@@ -18,6 +18,7 @@ A modern WebXR application built with React, enabling immersive Virtual and Augm
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
+
 - Node.js (v16 or higher)
 - npm (v7 or higher)
 - A WebXR-compatible browser and device
@@ -25,6 +26,7 @@ Before you begin, ensure you have the following installed:
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/pushakargaikwad/web-xr.git
    cd web-xr
@@ -38,8 +40,17 @@ Before you begin, ensure you have the following installed:
 ## Development
 
 Start the development server:
+
 ```bash
 npm run dev -- --host
+```
+
+Use the following command to serve the app using the basicSsl plugin, allowing you to access it at https://your-ip-address:5173.
+
+You may encounter a warning about an invalid certificate when accessing the site from your browser; you can safely ignore it to proceed.
+
+```bash
+npx vite serve --host
 ```
 
 The `--host` flag makes the server accessible from other devices on your network, which is useful for testing on VR/AR devices.
@@ -70,6 +81,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 WebXR React Application is Free Software, released under the GNU Affero General Public License (AGPL-3.0). This means you have fundamental freedoms to use and enhance this software:
 
 ### Your Freedoms
+
 - ✨ You can use this application for any purpose, including commercial use
 - 🔄 You can study how the application works and modify it
 - 🌍 You can share the application with others
@@ -78,7 +90,9 @@ WebXR React Application is Free Software, released under the GNU Affero General 
 The AGPL-3.0 license is chosen to protect these freedoms and ensure that improvements remain free software. This license extends the traditional GPL freedoms to network applications, ensuring that users interacting with the application over a network also receive these freedoms.
 
 ### License Requirements
+
 To protect these freedoms for everyone, the license includes these key requirements:
+
 - Share the complete source code when you distribute the software
 - Maintain the same AGPL-3.0 license for modified versions
 - Document significant changes made to the code
