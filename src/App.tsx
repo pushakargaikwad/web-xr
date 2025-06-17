@@ -29,7 +29,6 @@ export default function App() {
               <meshBasicMaterial color="red" />
             </mesh>
           </Handle>
-          <Gltf src="/Untitled.glb" />
         </XR>
       </Canvas>
       <Footer />
