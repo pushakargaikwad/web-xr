@@ -5,6 +5,7 @@ import { Vector3 } from "three";
 import { Handle } from "@react-three/handle";
 import { Footer } from "./components/Footer";
 import "./App.css";
+import { Gltf } from "@react-three/drei";
 
 const store = createXRStore();
 
@@ -34,5 +35,3 @@ export default function App() {
     </div>
   );
 }
-
-
