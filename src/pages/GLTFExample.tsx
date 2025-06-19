@@ -47,13 +47,13 @@ export default function GLTFExample() {
           <XROrigin position={position} />
           <PointerEvents />
           <Handle>
-            <Root>
-              <Fullscreen>
+            <group position={[-7, 1.5, -1]}>
+              <Root>
                 <Container>
                   <Card width={300}>
                     <CardHeader>
                       <CardTitle>
-                        <Text>Notifications</Text>
+                        <Text>GTLF Example</Text>
                       </CardTitle>
                       <CardDescription>
                         <Switch
@@ -76,8 +76,8 @@ export default function GLTFExample() {
                     </CardHeader>
                   </Card>
                 </Container>
-              </Fullscreen>
-            </Root>
+              </Root>
+            </group>
           </Handle>
           {/* <OrbitControls makeDefault /> */}
           <Environment preset="studio" />
